@@ -1,0 +1,23 @@
+<h1>Register</h1>
+<%= form_with url: register_path, class: 'register-form' do |f| %>
+  <div id="valid-username-alert"></div>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <br>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+  <br>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  <br>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <br>
+  <%= f.label :confirm_password %>
+  <%= f.password_field :password_confirmation %>
+  <br>
+  <%= f.submit %>
+<% end %>
