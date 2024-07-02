@@ -1,0 +1,15 @@
+:root {
+  --primary-background: #1e2124;
+  --secondary-background: #282b30;
+  --text-color: #c8c8c8;
+  --highlight: #7289da;
+}
+
+body {
+  color: var(--text-color);
+  background-color: #1e2124;
+}
+
+.dev-btn {
+  background-color: var(--primary-background);
+}
