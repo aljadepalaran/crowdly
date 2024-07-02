@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'login', to: 'login#new'
   get 'register', to: 'registration#new'
   post 'register', to: 'registration#create'
+  get 'profile', to: 'profile#show'
 
   namespace :api do
     namespace :v1 do
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     get '/', to: 'dashboard#index'
+    resources :users
   end
 
   root "home#index"

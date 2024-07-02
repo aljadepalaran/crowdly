@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users">
+  <table class="table">
+    <th scope="col">ID</th>
+    <th scope="col">First Name</th>
+    <th scope="col">Last Name</th>
+    <th scope="col">Username</th>
+    <th scope="col">Role</th>
+    <th scope="col">Email</th>
+    <th scope="col">Actions</th>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.username %></td>
+        <td><%= user.role %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'edit', nil %></td>
+      <tr>
+    <% end %>
+  </table>
+  
+</div>

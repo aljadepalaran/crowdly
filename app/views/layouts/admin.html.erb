@@ -13,8 +13,16 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class='container'>
-    <%= render partial: 'shared/flash' %>
+  <body>
+    <div class='d-flex bg-warning'>
+      <div class='d-flex'>
+        <%= render partial: 'navigation/sidebar' %>
+      </div>
+      <div class='d-flex'>
+        <%= render partial: 'shared/flash' %>
+        <%= render partial: 'shared/dev_btns' %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
